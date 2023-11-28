@@ -41,6 +41,11 @@ header {
     box-sizing: border-box;
 }
 
+.container {
+    /* overflow-y: hidden; */
+    /* scroll-behavior: inherit; */
+}
+
 /* Creo classi di square diversi a seconda del livello */
 
 .beginner {
@@ -74,10 +79,10 @@ header {
 main {
     width: 100%;
     margin: auto;
-    height: calc(100vh - 180px);
+    min-height: calc(100vh - 180px);
     background-color: lightgreen;
-    overflow-y: hidden;
-    scroll-behavior: auto;
+    margin-bottom: 80px;
+
 }
 
 footer {
@@ -91,4 +96,5 @@ footer {
     align-items: center;
     padding-left: 25px;
     z-index: 500;
+    background-color: white;
 }
